@@ -39,9 +39,18 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3000/register', { name, email, password })
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
-  }
+    .then(() => {
+      alert('Successfully registered');
+      // Clear the form fields
+      setName('');
+      setEmail('');
+      setPassword('');
+    })
+    .catch(err => {
+      console.log(err);
+      alert('Registration failed. Please try again.');
+    });
+}
 
   return (
     <div className="register-container">
