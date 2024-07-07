@@ -28,7 +28,7 @@
 //   );
 // }
 import { useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import axios from 'axios';
 import "./Register.css";
 // axios.defaults.baseURL = '';
@@ -40,7 +40,7 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3000/register', { name, email, password })
-      .then(result => console.log(result))
+      .then(res => console.log(res))
       .catch(err => console.log(err));
   }
 
