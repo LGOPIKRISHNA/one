@@ -28,10 +28,9 @@
 //   );
 // }
 import { useState } from "react";
-//import { Link } from "react-router-dom";
 import axios from 'axios';
 import "./Register.css";
-// axios.defaults.baseURL = '';
+
 function Register() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -45,44 +44,41 @@ function Register() {
   }
 
   return (
-    <div className="d-flex justify-content-center">
-      <div className="bg-white p-3 rounded w-25">
+    <div className="register-container">
+      <div className="register-form">
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">Name</label>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
             <input 
               type="text" 
-              className="form-control rounded-0" 
               id="name" 
               value={name}
               onChange={(e) => setName(e.target.value)} 
               required 
             />
           </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email</label>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
             <input 
               type="email" 
-              className="form-control rounded-0" 
               id="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)} 
               required 
             />
           </div>
-          <div className="mb-3">
-            <label htmlFor="password" className="form-label">Password</label>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
             <input 
               type="password" 
-              className="form-control rounded-0" 
               id="password" 
               value={password}
               onChange={(e) => setPassword(e.target.value)} 
               required 
             />
           </div>
-          <button type="submit">
+          <button type="submit" className="submit-btn">
             Register
           </button>
         </form>
