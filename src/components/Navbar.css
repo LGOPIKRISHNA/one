@@ -24,4 +24,9 @@
   .navbar li a:hover {
     background-color: #111;
   }
+  li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+  }
   

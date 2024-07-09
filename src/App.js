@@ -6,17 +6,22 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
 import Register from './components/Register';
+import Categories from './components/Categories'
+import Deals from './components/Deals'
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
+        
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/Deals" element={<Deals />} />
+        <Route path="/Categories" element={<Categories />} />
       </Routes>
     </>
   );
