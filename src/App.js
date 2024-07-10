@@ -9,10 +9,12 @@ import Register from './components/Register';
 import Categories from './components/Categories'
 import Deals from './components/Deals'
 
+
 function App() {
   return (
     <>
       <Navbar />
+      
       <Routes>
         
         <Route path="/home" element={<Home />} />

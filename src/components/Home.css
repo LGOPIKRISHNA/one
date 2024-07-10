@@ -87,6 +87,7 @@
   /* Featured Items Section */
   .featured-items {
     padding: 40px 0;
+    background-color:#0b0b02;
   }
   
   .featured-items h2 {
@@ -145,7 +146,7 @@
   /* Categories Section */
   .categories {
     padding: 40px 0;
-    background-color: #f8f8f8;
+    background-color: #020b03;
   }
   
   .categories h2 {
@@ -162,7 +163,7 @@
   
   .category {
     background-color: #e91e63;
-    color: white;
+    color: rgb(48, 187, 202);
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
