@@ -11,10 +11,8 @@
 
 // export default Home;
 
-
 import React, { useRef } from 'react';
-
-import './Home.css' // You'll need to create this CSS file
+import './Home.css'; // You'll need to create this CSS file
 
 const KrishnaShoppingMall = () => {
   const featuredItems = [
@@ -22,11 +20,16 @@ const KrishnaShoppingMall = () => {
     { id: 2, name: 'Smart Watch', price: '₹2999', image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSoltBGVAh1_HxeWsZYyyfz8WpynMcHSaT-_ToQZxs8yl7WgOaWrhKq2XyyI4VLPE4ClfbCVp8ObnoO3Ehko6kpCsQHDnH-S4hCxttttoshWVIctLcbZb-U8A' },
     { id: 3, name: 'Designer Kurta', price: '₹1499', image: 'https://cdn.editorji.com/6565a9318a14e_1.png' },
     { id: 4, name: 'Leather Handbag', price: '₹2499', image: 'https://w0.peakpx.com/wallpaper/748/156/HD-wallpaper-mahesh-babu-prince-mahesh-babu-sarileru-nekkevaru-ssmb-superstar-mahesh-babu.jpg' },
+    { id: 5, name: 'Wireless Earbuds', price: '₹1999', image: 'https://rukminim2.flixcart.com/image/850/1000/xif0q/headphone/s/a/6/earbuds-bt-5-3-wireless-tws-earhook-headphone-buds-with-mic-life-original-imagp2bhmv2q8h3h.jpeg?q=90&crop=false' },
+    // Add more items as needed
   ];
+
   const scrollToFeaturedItems = () => {
     featuredItemsRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+
   const featuredItemsRef = useRef(null);
+
   return (
     <div className="krishna-mall">
       <main>
@@ -38,7 +41,7 @@ const KrishnaShoppingMall = () => {
 
         <section className="featured-items" ref={featuredItemsRef}>
           <h2>Featured Items</h2>
-          <div className="item-grid">
+          <div className="item-scroll">
             {featuredItems.map((item) => (
               <div key={item.id} className="item-card">
                 <img src={item.image} alt={item.name} />

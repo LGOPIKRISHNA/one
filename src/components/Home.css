@@ -228,3 +228,135 @@
       margin-right: 0;
     }
   }
+
+
+  .krishna-mall {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .featured-items {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  
+  .item-scroll {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .item-card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .item-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .item-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .item-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .item-card button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .categories {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .mall-footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    color: #ccc;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
