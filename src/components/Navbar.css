@@ -27,6 +27,10 @@
   li{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     margin-left: 4%;
+=======
+    margin-left: 5%;
+>>>>>>> f56e15442869c492cd78f0dda7e2078b0cd47555
   }
   
