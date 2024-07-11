@@ -16,9 +16,10 @@ import './Home.css'; // You'll need to create this CSS file
 import ItemDetails from './ItemDetails';
 import FeaturedItem from './FeaturedItem';
 
+
 const KrishnaShoppingMall = () => {
   const featuredItems = [
-    { id: 1, name: 'Elegant Saree', price: '₹1999', image: 'https://media.samyakk.com/pub/media/catalog/product/s/r/sr27311-d.jpg'},
+    { id: 1, name: 'Elegant Saree', price: '₹1999', image: 'https://media.samyakk.com/pub/media/catalog/product/s/r/sr27311-d.jpg',},
     { id: 2, name: 'Smart Watch', price: '₹2999', image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSoltBGVAh1_HxeWsZYyyfz8WpynMcHSaT-_ToQZxs8yl7WgOaWrhKq2XyyI4VLPE4ClfbCVp8ObnoO3Ehko6kpCsQHDnH-S4hCxttttoshWVIctLcbZb-U8A' },
     { id: 3, name: 'Designer Kurta', price: '₹1499', image: 'https://cdn.editorji.com/6565a9318a14e_1.png' },
     { id: 4, name: 'Leather Handbag', price: '₹2499', image: 'https://w0.peakpx.com/wallpaper/748/156/HD-wallpaper-mahesh-babu-prince-mahesh-babu-sarileru-nekkevaru-ssmb-superstar-mahesh-babu.jpg' },
